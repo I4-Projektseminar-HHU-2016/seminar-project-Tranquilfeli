@@ -6,8 +6,8 @@ Developed here is a simple iOS music player that gives the user the ability to s
 
 ## Features ##
 
-- [x] simple music player interface (not yet implemented: MPMedia framework)
-- [ ] 
+- [x] simple music player interface with AVPlayer and mp3 of Chopin's Funeral March
+- [x] access to system media player via MediaPlayer framework
 
 ## Getting Started
 
