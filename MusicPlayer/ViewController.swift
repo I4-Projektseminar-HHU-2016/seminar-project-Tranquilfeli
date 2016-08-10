@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-
+import MediaPlayer
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -24,9 +24,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var playedTime: UILabel!
     
+    @IBOutlet weak var playMusicMP: UIButton!
+    
+    @IBOutlet weak var pauseMusicMP: UIButton!
+    
     var player = AVAudioPlayer()
     var isPlaying = false
     var timer:NSTimer!
+    let mediaItems = MPMediaQuery.songsQuery().items
+    var query = MPMediaQuery.songsQuery()
+  
+
     
     
     
@@ -62,10 +70,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         player.play()
     }
     
+    @IBAction func playMusicMP(sender: UIButton) {
+          let mediaCollection = MPMediaItemCollection(items: mediaItems!)
+          let player = MPMusicPlayerController.systemMusicPlayer()
+          player.setQueueWithItemCollection(mediaCollection)
+          player.play()
+
+
+
+    }
+    
     func updateTime() {
-        var currentTime = Int(player.currentTime)
-        var minutes = currentTime/60
-        var seconds = currentTime - minutes * 60
+       var currentTime = Int(player.currentTime)
+       var minutes = currentTime/60
+       var seconds = currentTime - minutes * 60
         
         playedTime.text = NSString(format: "%02d:%02d", minutes,seconds) as String
     }
@@ -77,6 +95,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         isPlaying = false
     }
  
+    @IBAction func pauseMusicMP(sender: AnyObject) {
+    }
   
     // MARK: Actions
 

@@ -110,12 +110,32 @@
                                     <action selector="pauseMusic:" destination="kxD-Kl-fgg" eventType="touchUpInside" id="cQR-oe-zUN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xXL-If-mcM">
+                                <rect key="frame" x="38" y="372" width="62" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="play"/>
+                                <connections>
+                                    <action selector="playMusic:" destination="kxD-Kl-fgg" eventType="touchUpInside" id="0L0-Sq-Kx8"/>
+                                    <action selector="playMusicMP:" destination="kxD-Kl-fgg" eventType="touchUpInside" id="ojD-aC-Zro"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8NS-ow-rc4">
+                                <rect key="frame" x="210" y="372" width="62" height="59.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="pause-circle-outline"/>
+                                <connections>
+                                    <action selector="pauseMusic:" destination="kxD-Kl-fgg" eventType="touchUpInside" id="65u-si-mio"/>
+                                    <action selector="pauseMusicMP:" destination="kxD-Kl-fgg" eventType="touchUpInside" id="ZhY-5N-cXo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="pauseMusic" destination="eec-iL-8YO" id="8qp-Ny-fwj"/>
+                        <outlet property="pauseMusicMP" destination="8NS-ow-rc4" id="b2m-ad-EK8"/>
                         <outlet property="playMusic" destination="Jch-en-Nxw" id="IzR-P3-Xrh"/>
+                        <outlet property="playMusicMP" destination="xXL-If-mcM" id="99t-9x-u6K"/>
                         <outlet property="playedTime" destination="eU0-wo-bgs" id="kbP-WD-xOI"/>
                         <outlet property="trackTitle" destination="gNK-r8-fOr" id="urQ-Dp-kSN"/>
                     </connections>
