@@ -31,9 +31,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var player = AVAudioPlayer()
     var isPlaying = false
     var timer:NSTimer!
-    let mediaItems = MPMediaQuery.songsQuery().items
+    var mediaItems = MPMediaQuery.songsQuery().items
     var query = MPMediaQuery.songsQuery()
-  
+    let predicateByGenre = MPMediaPropertyPredicate(value: "Electronic", forProperty: MPMediaItemPropertyGenre)
+    
 
     
     
@@ -71,13 +72,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func playMusicMP(sender: UIButton) {
-          let mediaCollection = MPMediaItemCollection(items: mediaItems!)
+          query.filterPredicates = NSSet(object: predicateByGenre) as! Set<MPMediaPredicate>
+          let mediaCollection = MPMediaItemCollection(items: query.items!)
           let player = MPMusicPlayerController.systemMusicPlayer()
           player.setQueueWithItemCollection(mediaCollection)
           player.play()
-
-
-
     }
     
     func updateTime() {
@@ -95,7 +94,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         isPlaying = false
     }
  
-    @IBAction func pauseMusicMP(sender: AnyObject) {
+    @IBAction func pauseMusicMP(sender: UIButton) {
+        
     }
   
     // MARK: Actions
