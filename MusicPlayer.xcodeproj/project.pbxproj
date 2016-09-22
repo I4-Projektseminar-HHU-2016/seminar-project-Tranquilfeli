@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		693851931D90628200CB3B84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693851921D90628200CB3B84 /* ViewController.swift */; };
+		693851951D9064E200CB3B84 /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693851941D9064E200CB3B84 /* PlaylistController.swift */; };
 		695A83FA1D5B7309003BF6AA /* chopin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 695A83F91D5B7309003BF6AA /* chopin.mp3 */; };
 		697E77681D5B2C8A00FD3F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697E77671D5B2C8A00FD3F1A /* AppDelegate.swift */; };
-		697E776A1D5B2C8A00FD3F1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697E77691D5B2C8A00FD3F1A /* ViewController.swift */; };
 		697E776D1D5B2C8A00FD3F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697E776B1D5B2C8A00FD3F1A /* Main.storyboard */; };
 		697E776F1D5B2C8A00FD3F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697E776E1D5B2C8A00FD3F1A /* Assets.xcassets */; };
 		697E77721D5B2C8A00FD3F1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697E77701D5B2C8A00FD3F1A /* LaunchScreen.storyboard */; };
 		697E777A1D5B2CA500FD3F1A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697E77791D5B2CA500FD3F1A /* MediaPlayer.framework */; };
-		697E777E1D5B519900FD3F1A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697E777D1D5B519900FD3F1A /* LoginView.swift */; };
+		698718AC1D91EA9600BC51FB /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698718AB1D91EA9600BC51FB /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		693851921D90628200CB3B84 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		693851941D9064E200CB3B84 /* PlaylistController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
 		695A83F91D5B7309003BF6AA /* chopin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chopin.mp3; path = MusicPlayer/chopin.mp3; sourceTree = "<group>"; };
 		697E77641D5B2C8A00FD3F1A /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		697E77671D5B2C8A00FD3F1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		697E77691D5B2C8A00FD3F1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		697E776C1D5B2C8A00FD3F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		697E776E1D5B2C8A00FD3F1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		697E77711D5B2C8A00FD3F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		697E77731D5B2C8A00FD3F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		697E77791D5B2CA500FD3F1A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		697E777D1D5B519900FD3F1A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		698718AB1D91EA9600BC51FB /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +66,13 @@
 			isa = PBXGroup;
 			children = (
 				697E77671D5B2C8A00FD3F1A /* AppDelegate.swift */,
-				697E77691D5B2C8A00FD3F1A /* ViewController.swift */,
+				693851921D90628200CB3B84 /* ViewController.swift */,
+				698718AB1D91EA9600BC51FB /* DataModel.swift */,
 				697E776B1D5B2C8A00FD3F1A /* Main.storyboard */,
+				693851941D9064E200CB3B84 /* PlaylistController.swift */,
 				697E776E1D5B2C8A00FD3F1A /* Assets.xcassets */,
 				697E77701D5B2C8A00FD3F1A /* LaunchScreen.storyboard */,
 				697E77731D5B2C8A00FD3F1A /* Info.plist */,
-				697E777D1D5B519900FD3F1A /* LoginView.swift */,
 			);
 			path = MusicPlayer;
 			sourceTree = "<group>";
@@ -101,12 +104,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Frauke Kling";
 				TargetAttributes = {
 					697E77631D5B2C8A00FD3F1A = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = FJS894MT9F;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -147,9 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				697E777E1D5B519900FD3F1A /* LoginView.swift in Sources */,
-				697E776A1D5B2C8A00FD3F1A /* ViewController.swift in Sources */,
+				693851931D90628200CB3B84 /* ViewController.swift in Sources */,
+				698718AC1D91EA9600BC51FB /* DataModel.swift in Sources */,
 				697E77681D5B2C8A00FD3F1A /* AppDelegate.swift in Sources */,
+				693851951D9064E200CB3B84 /* PlaylistController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,8 +194,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -234,8 +241,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -254,6 +263,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -264,11 +274,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FJS894MT9F;
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FraukeKling.MusicPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -278,11 +291,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FJS894MT9F;
 				INFOPLIST_FILE = MusicPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FraukeKling.MusicPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
