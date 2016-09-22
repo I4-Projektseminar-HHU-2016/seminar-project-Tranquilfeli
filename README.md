@@ -6,33 +6,27 @@ Developed here is a simple iOS music player that gives the user the ability to s
 
 ## Features ##
 
-- [x] simple music player interface with AVPlayer and mp3 of Chopin's Funeral March
 - [x] access to system media player via MediaPlayer framework
-
+- [x] option to sort system media into four playlists
+- [x] option to play these playlists
+- 
 ## Getting Started
 
 
 ### Prerequisities
 
-an iPhone
+an iPhone 5s or SE with iOS 10 and XCode 8.
 
 
 ### Installing
 
+Download the project and run the App in Xcode. Verify the developer and grant access to your media library. That's it!
 
 
-## Versioning
- 
 
 ## Authors
 
 Frauke Kling
 
 ## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-
-## Acknowledgments
-
 
