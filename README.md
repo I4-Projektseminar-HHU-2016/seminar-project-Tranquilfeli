@@ -9,7 +9,7 @@ Developed here is a simple iOS music player that gives the user the ability to s
 - [x] access to system media player via MediaPlayer framework
 - [x] option to sort system media into four playlists
 - [x] option to play these playlists
-- 
+
 ## Getting Started
 
 
